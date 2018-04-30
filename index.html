@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baby Chilli</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body ng-app="app">
+    <div>
+        <div class="row">
+            <div class="col">
+                <a href="#">
+                    <img src="./res/image/BabyChilli.jpg" alt="Baby-Chilli">
+                </a>
+            </div>
+            <div class="col" id="nav-search">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <h6 id="most-text">คำที่ถูกค้นหาบ่อย : </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-nav">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <a class="nav-link" href="#"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                สินค้า
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#" ng-click="product1()">Link 1</a>
+                                <a class="dropdown-item" href="#" ng-click="product2()">Link 2</a>
+                                <a class="dropdown-item" href="#" ng-click="product3()">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                เเบรนด์
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-gift"></i>
+                                ดีลวันนี้
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-tags"></i>
+                                ลดราคา
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-fire"></i>
+                                ล้างสต๊อก
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-basket"></i>
+                                ตะกร้า
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user"></i>
+                                บัญชีของคุณ
+                            </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div ng-view></div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./controller.js"></script>
+</body>
+
+</html>

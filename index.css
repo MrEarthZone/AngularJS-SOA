@@ -1,5 +1,5 @@
 body {
-    font-family: 'Itim', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 #nav-search>.form-inline>.form-control {
@@ -37,4 +37,23 @@ body {
 .row {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.login{
+    margin-top: 50px; 
+    margin-left: 10%;
+}
+
+.register{
+    margin-top: 50px;
+}
+
+.register>input {
+    margin: 10px 10px;
+    width: 60%;
+}
+
+.login>input{
+    margin: 10px 10px;
+    width: 50%;
 }

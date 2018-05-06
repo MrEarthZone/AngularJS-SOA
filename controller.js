@@ -1,17 +1,18 @@
+var app = angular.module('app', ['ngRoute']);
 
-var app = angular.module('app', []);
-var route = angular.module('app', ['ngRoute']);
-app.controller('main-con', function ($scope) {
-
+app.controller('body', function ($scope,$http) {
+    $http.get("https://productapi977377.herokuapp.com/Products.php/api/products")
+  .then(function(response) {
+        console.log(response);
+  });
 });
 
-route.config(function($routeProvider){
+app.config(function ($routeProvider) {
     $routeProvider
-    .when('/',{
-        templateUrl : 'login.html'
-    })
-    .otherwise({
-        redirectTo:'/'
-    });
+        .when('/login', {
+            templateUrl: 'login.html'
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
 });
-

@@ -1,7 +1,7 @@
 var app = angular.module('app', ['ngRoute']);
 
 app.controller('body', function ($scope,$http) {
-    $http.get("https://productapi977377.herokuapp.com/Products.php/api/products")
+    $http.get("https://pacific-peak-27279.herokuapp.com/api/ProductReview/")
   .then(function(response) {
         console.log(response);
   });

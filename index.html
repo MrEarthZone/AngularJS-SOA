@@ -16,7 +16,10 @@
 
 <body ng-controller="body">
     <div class="row">
-        <div class="col">
+        <div class="col" id="logo">
+            <img src="./res/image/taily-gang-s.png" alt="">
+        </div>
+        <div class="col" id="Baby-Chilli">
             <a href="#">
                 <img src="./res/image/BabyChilli.jpg" alt="Baby-Chilli">
             </a>
@@ -28,7 +31,7 @@
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <h6 id="most-text">คำที่ถูกค้นหาบ่อย : </h6>
+            <h6 id="most-text">สิ่งที่คุณน่าจะสนใจ : </h6>
         </div>
     </div>
     <div class="row">
@@ -94,11 +97,7 @@
             </nav>
         </div>
     </div>
-    <div ng-view>
-    </div>
-    <div>
-        {{ message }}
-    </div>
+    <div ng-view></div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/angular/angular.min.js"></script>
     <script src="./node_modules/angular-route/angular-route.min.js"></script>

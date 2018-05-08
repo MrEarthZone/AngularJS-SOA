@@ -1,10 +1,13 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.controller('body', function ($scope,$http) {
-    $http.get("https://pacific-peak-27279.herokuapp.com/api/ProductReview/")
-  .then(function(response) {
-        console.log(response);
-  });
+app.controller('body', function ($scope, $http) {
+    $http.get("https://productapi977377.herokuapp.com/Products.php/api/products")
+        .then(function (response) {
+
+            for (i = 0; i < response.data.length; i++) {
+                console.log(response.data[i]);
+            }
+        });
 });
 
 app.config(function ($routeProvider) {
@@ -12,7 +15,7 @@ app.config(function ($routeProvider) {
         .when('/login', {
             templateUrl: 'login.html'
         })
-        .otherwise({
-            redirectTo: '/'
+        .when('/',{
+            templateUrl: 'main.html'
         });
 });

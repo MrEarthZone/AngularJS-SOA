@@ -57,19 +57,19 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/#!/product">
+                        <a class="nav-link" href="/#!/product" ng-click="product()">
                             <i class="fas fa-gift"></i>
                             ดีลวันนี้
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/#!/product">
+                        <a class="nav-link" href="/#!/product" ng-click="product()">
                             <i class="fas fa-tags"></i>
                             ลดราคา
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/#!/product">
+                        <a class="nav-link" href="/#!/product" ng-click="product()">
                             <i class="fas fa-fire"></i>
                             ล้างสต๊อก
                         </a>
@@ -77,7 +77,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" id="cart" href="/#!/cart" onclick="showCart()">
                             <i class="fas fa-shopping-basket"></i>
                             ตะกร้า
                         </a>
@@ -101,6 +101,8 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./account.js"></script>
     <script src="./controller.js"></script>
+    <script src="./product.js"></script>
+    <script src="./cart.js"></script>
 
 </body>
 

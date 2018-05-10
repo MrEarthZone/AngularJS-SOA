@@ -95,14 +95,53 @@ body {
     width: 50%;
     margin-bottom: 10px;
 }
-.login{
+
+.login {
     padding-right: 0px;
     border-right: 1px solid #585858;
 }
 
-#edit-account > input{
+#edit-account>input {
     width: 500px;
     margin-bottom: 15px;
 }
 
+.product {
+    margin-top: 15px;
+}
 
+.product>img {
+    max-height: 220px;
+}
+
+.product>.input-sm {
+    margin-left: 0.75px;
+    margin-right: 0.75px;
+    width: 50px;
+    display: inline;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+}
+
+.product>.btn-sm {
+    border-radius: 0px;
+}
+
+.product>.bucket {
+    margin-left: 30px;
+}
+
+.cart-num {
+    position: absolute;
+    background: #f36e36;
+    color: #fff;
+    top: -4px;
+    font-weight: 400;
+    text-align: center;
+    border: 3px solid #f36e36;
+    font-size: 13px;
+    min-width: 19px;
+    line-height: 14px;
+    border-radius: 50%;
+}

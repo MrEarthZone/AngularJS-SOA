@@ -46,6 +46,18 @@ function register() {
         "lastname": "" + $("#regis-lastname").val(),
         "telno": "" + $("#regis-tel").val()
     }
+    $.ajax({
+        type: "POST",
+        url: proxy + 'https://customer-api-shopping.herokuapp.com/api/customers/',
+        data: JSON.stringify(data),
+        contentType: "application/json; charset=utf-8",
+        async: false,
+        dataType: "json",
+        success: function (data) {
+            alert("Register is complete.");
+            location.reload();
+        }
+    });
 }
 
 function setAccount() {

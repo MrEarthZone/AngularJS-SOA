@@ -1,5 +1,5 @@
 body {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Athiti', sans-serif;
 }
 
 #nav-search>.form-inline>.form-control {
@@ -17,10 +17,10 @@ body {
 }
 
 .navbar {
-    background-color: #1a8cff !important;
     border-radius: 4px;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
+    margin-top: 15px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .nav-link {
@@ -39,38 +39,70 @@ body {
     margin-right: 0px;
 }
 
-.login{
-    margin-top: 50px; 
-    margin-left: 10%;
+#logo {
+    margin-left: 15px;
 }
 
-.register{
-    margin-top: 50px;
+#Baby-Chilli {
+    margin-top: 30px;
+}
+
+.view {
+    margin: 20px 15px 15px 15px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+#shortcut-menu,
+#carousel {
+    padding-right: 0px;
+}
+
+#shortcut-menu button {
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    border: 0.40px solid #ecf0f1;
+    border-radius: 3px;
+}
+
+.btn-outline-secondary:disabled {
+    color: #000000;
+}
+
+#animal-icon {
+    width: 21px;
+    height: auto;
+}
+
+#btn-login,
+#btn-regis {
+    text-align: center;
+    vertical-align: center;
+    width: 200px;
 }
 
 .register>input {
-    margin: 10px 10px;
     width: 60%;
+    margin-bottom: 10px;
 }
 
-.login>input{
-    margin: 10px 10px;
+.login>input {
     width: 50%;
+    margin-bottom: 10px;
 }
-marquee{
-    margin-left: 15px;
-    color: #E95B70;
-}
-
-#logo{
-    margin-left: 15px; 
+.login{
+    padding-right: 0px;
+    border-right: 1px solid #585858;
 }
 
-#Baby-Chilli{
-    margin-top: 30px; 
+#edit-account > input{
+    width: 500px;
+    margin-bottom: 15px;
 }
 
-.view{
-    margin-left: 15px;
-    margin-right: 15px;
-}
+

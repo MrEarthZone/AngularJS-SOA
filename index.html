@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="./favicon.ico">
 </head>
@@ -44,35 +44,32 @@
                             สินค้า
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" ng-click="product1()">Link 1</a>
-                            <a class="dropdown-item" href="#" ng-click="product2()">Link 2</a>
-                            <a class="dropdown-item" href="#" ng-click="product3()">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            เเบรนด์
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
+                            <a class="dropdown-item" href="#" ng-click="dog()">
+                                <img src="./res/image/icon-dog.png" alt="icon-dog" id="animal-icon"> หมา(สุนัข)</a>
+                            <a class="dropdown-item" href="#" ng-click="cat()">
+                                <img src="./res/image/icon-cat.png" alt="icon-cat" id="animal-icon"> เเมว</a>
+                            <a class="dropdown-item" href="#" ng-click="fish()">
+                                <img src="./res/image/icon-fish.png" alt="icon-fish" id="animal-icon"> ปลาเเละสัตว์น้ำ</a>
+                            <a class="dropdown-item" href="#" ng-click="bird()">
+                                <img src="./res/image/icon-bird.png" alt="icon-bird" id="animal-icon"> นก</a>
+                            <a class="dropdown-item" href="#" ng-click="other()">
+                                <img src="./res/image/icon-other.png" alt="icon-other" id="animal-icon"> กระต่ายเเละอื่นๆ</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/#!/product">
                             <i class="fas fa-gift"></i>
                             ดีลวันนี้
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/#!/product">
                             <i class="fas fa-tags"></i>
                             ลดราคา
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/#!/product">
                             <i class="fas fa-fire"></i>
                             ล้างสต๊อก
                         </a>
@@ -86,9 +83,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!login">
+                        <a class="nav-link" href="" ng-click="account()">
                             <i class="fas fa-user"></i>
-                            ลงทะเบียน / เข้าสู่ระบบ
+                            <p id="account" style="display: inline;">ลงทะเบียน / เข้าสู่ระบบ</p>
                         </a>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
@@ -97,13 +94,14 @@
             </nav>
         </div>
     </div>
-    <div ng-view class="view"></div>
+    <div ng-view class="view row"></div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/angular/angular.min.js"></script>
     <script src="./node_modules/angular-route/angular-route.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./account.js"></script>
     <script src="./controller.js"></script>
-    <script src="./model.js"></script>
+
 </body>
 
 </html>

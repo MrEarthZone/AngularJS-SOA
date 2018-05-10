@@ -1,18 +1,18 @@
-<div class="row">
-    <div class="col login">
-        <h3>เข้าสู่ระบบ</h3>
-        <input type="text" class="form-control" placeholder="อีเมล์" id="email">
-        <input type="text" class="form-control" placeholder="รหัสผ่าน" id="password">
-        <button type="button" class="btn btn-dark">เข้าสู่ระบบ</button>
-    </div>
-    <div class="col register">
-        <h3>ลงทะเบียน</h3>
-        <input type="text" class="form-control" placeholder="อีเมล์" id="email">
-        <input type="text" class="form-control" placeholder="รหัสผ่าน" id="password">
-        <input type="text" class="form-control" placeholder="ชื่อ" id="name">
-        <input type="text" class="form-control" placeholder="นามสกุล" id="lastname">
-        <input type="text" class="form-control" placeholder="ที่อยู่" id="address">
-        <input type="text" class="form-control" placeholder="เบอร์โทรศัพท์" id="tel">
-        <button type="button" class="btn btn-dark">ลงทะเบียน</button>
-    </div>
+<div class="col-sm-12" id="warning"></div>
+
+<div class="col-sm-6 login" align="center">
+    <h3>เข้าสู่ระบบ</h3>
+    <input type="text" class="form-control" placeholder="อีเมล์" id="login-email">
+    <input type="password" class="form-control" placeholder="รหัสผ่าน" id="login-password">
+    <button type="button" class="btn btn-dark" id="btn-login" onclick="login()">เข้าสู่ระบบ</button>
+</div>
+<div class="col-sm-6 register" align="center">
+    <h3>ลงทะเบียน</h3>
+    <input type="text" class="form-control" placeholder="อีเมล์" id="regis-email">
+    <input type="password" class="form-control" placeholder="รหัสผ่าน" id="regis-password">
+    <input type="text" class="form-control" placeholder="ชื่อ" id="regis-name">
+    <input type="text" class="form-control" placeholder="นามสกุล" id="regis-lastname">
+    <input type="text" class="form-control" placeholder="ที่อยู่" id="regis-address">
+    <input type="text" class="form-control" placeholder="เบอร์โทรศัพท์" id="regis-tel">
+    <button type="button" class="btn btn-dark" id="btn-regis" onclick="register()">ลงทะเบียน</button>
 </div>
